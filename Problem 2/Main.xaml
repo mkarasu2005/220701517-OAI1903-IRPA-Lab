@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1112.8,1948.8" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1408.8,2056" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -102,7 +102,7 @@
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="513.6,1884" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="513.6,1991.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="movie" />
     </Sequence.Variables>
@@ -116,7 +116,7 @@
         <OutArgument x:TypeArguments="x:String">[movie]</OutArgument>
       </ui:InputDialog.Result>
     </ui:InputDialog>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: IMDb: Ratings, Reviews, and Where to Watch the Best Movies &amp; TV Shows" sap:VirtualizedContainerService.HintSize="451.2,1521.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="f0798941-a12c-422b-ad68-78dca73d2366" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: IMDb: Ratings, Reviews, and Where to Watch the Best Movies &amp; TV Shows" sap:VirtualizedContainerService.HintSize="451.2,1530.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="f0798941-a12c-422b-ad68-78dca73d2366" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -137,7 +137,7 @@
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.imdb.com/" CVScreenId="46946828-0e20-4e3a-938d-976e6b22d208" CvElementArea="461, 237, 837, 44" CvType="InputBox" DesignTimeRectangle="467, 240, 758, 40" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='suggestion-search' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='suggestion-search' tag='INPUT' type='text' class='imdb-header-search__input searchTypeahead__input react-autosuggest__input' placeholder='Search IMDb' aaname='' /&gt;" Guid="4cf7aaf6-c91c-411b-b775-0aa118a90125" InformativeScreenshot="162bd985b00b160267221a267f5e50ae.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IMDb: Ratings, Reviews, and Where to Watch the Best Movies &amp;amp; TV Shows' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target CVScreenId="46946828-0e20-4e3a-938d-976e6b22d208" CvElementArea="391, 237, 75, 44" CvType="InputBox" DesignTimeRectangle="394, 240, 73, 40" ElementType="Text" FullSelectorArgument="&lt;webctrl aria-label='All' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='All' tag='LABEL' type='' class='ipc-btn ipc-btn--single-padding ipc-btn--center-align-content ipc-btn--default-height ipc-btn--core-base ipc-btn--theme-base ipc-btn--on-textPrimary ipc-text-button searchCatSelector-button searchCatSelector__opener searchform__categories nav-search-form__categories' aaname='' check:innerText='All' /&gt;" Guid="6f4d6917-c789-48fd-9985-b1fe9a14704d" SearchSteps="Selector, CV" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
@@ -161,7 +161,7 @@
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.imdb.com/find/?q=Raayan&amp;ref_=nv_sr_sm" CVScreenId="a424862f-4ba5-4a5b-a0d8-68bae5121ff6" CvTextArea="291, 946, 67, 21" CvTextArgument="Raayan" CvType="Text" DesignTimeRectangle="292, 945, 882, 22" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aria-role='button' class='ipc-metadata-list-summary-item__t' parentid='__next' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='button' class='ipc-metadata-list-summary-item__t' parentid='__next' tag='A' type='' aaname='Raayan' /&gt;" Guid="8081d992-a762-4e8b-8d92-c507d9e35ab2" InformativeScreenshot="8a6171a39688f51574efbd8a76afc859.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Find - IMDb' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target CVScreenId="a424862f-4ba5-4a5b-a0d8-68bae5121ff6" CvTextArea="290, 969, 42, 16" CvTextArgument="2024" CvType="Text" DesignTimeRectangle="292, 968, 41, 21" ElementType="Text" FullSelectorArgument="&lt;webctrl class='ipc-metadata-list-summary-item__li' parentid='__next' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='ipc-metadata-list-summary-item__li' parentid='__next' tag='SPAN' type='' aaname='2024' /&gt;" Guid="7917cacc-62d0-47e7-87f7-c8e96f9443fa" SearchSteps="Selector, FuzzySelector, CV" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
@@ -182,7 +182,7 @@
               <uix:NGetText.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.imdb.com/title/tt26233598/?ref_=fn_al_tt_1" CVScreenId="708c5f52-6efb-417f-adfa-c380a7d4bad6" CvTextArea="186, 425, 43, 16" CvType="AnyWordGroup" DesignTimeRectangle="189, 421, 40, 25" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='2024' aria-role='button' parentid='__next' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='button' parentid='__next' tag='A' type='' class='ipc-link ipc-link--baseAlt ipc-link--inherit-color' /&gt;" Guid="9368a127-4ca8-45d7-a821-558793dea4d4" ImageBase64="" InformativeScreenshot="af53b618a5dd0d3635287db966ca3576.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Raayan (2024) - IMDb' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target CVScreenId="708c5f52-6efb-417f-adfa-c380a7d4bad6" CvElementArea="170, 236, 86, 45" CvTextArea="181, 245, 63, 27" CvTextArgument="IMDb" CvType="Button" DesignTimeRectangle="174, 240, 80, 40" FullSelectorArgument="&lt;webctrl id='home_img_holder' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='home_img_holder' tag='A' type='' class='sc-iwaiBT fWrebE imdb-header__logo-link' aaname='' check:text='' /&gt;" Guid="ac0fa12e-981b-4663-ac45-129305aae7d9" SearchSteps="Selector, FuzzySelector, CV" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
@@ -193,7 +193,7 @@
               <uix:NGetText.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.imdb.com/title/tt26233598/?ref_=fn_al_tt_1" CVScreenId="0e0a6ccb-9b57-433b-a716-5abb1cd89df4" CvTextArea="236, 425, 76, 16" CvType="AnyWordGroup" DesignTimeRectangle="229, 421, 83, 25" DesignTimeScaleFactor="1.25" ElementType="ListItem" FullSelectorArgument="&lt;webctrl aria-role='presentation' isleaf='1' tag='LI' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' isleaf='1' tag='LI' type='' class='ipc-inline-list__item' /&gt;" Guid="90a58e26-9f70-4133-b3f0-7c91d885d8d2" ImageBase64="" InformativeScreenshot="e05cf926507ab76b40381bc3a3d809bf.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Raayan (2024) - IMDb' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target CVScreenId="0e0a6ccb-9b57-433b-a716-5abb1cd89df4" CvTextArea="316, 251, 48, 16" CvTextArgument="Menu" CvType="Text" DesignTimeRectangle="264, 240, 120, 40" ElementType="Text" FullSelectorArgument="&lt;webctrl id='imdbHeader-navDrawerOpen' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='imdbHeader-navDrawerOpen' tag='LABEL' type='' class='ipc-responsive-button ipc-btn--theme-baseAlt ipc-responsive-button--transition-l ipc-btn--on-textPrimary ipc-responsive-button--single-padding sc-hhIjBB jTERLf hamburger__icon' aaname='' check:innerText='Menu' /&gt;" Guid="516e9a87-b5de-4fa4-9abf-19ea3b03813c" SearchSteps="Selector, FuzzySelector, CV" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
@@ -205,7 +205,7 @@
                 <uix:TargetAnchorable BrowserURL="https://www.imdb.com/title/tt26233598/?ref_=fn_al_tt_1" CVScreenId="80f741e5-600e-420d-b143-41f9dd63d561" CvTextArea="1299, 389, 73, 21" CvType="AnyWordGroup" DesignTimeRectangle="1301, 385, 40, 30" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='6.7' parentid='__next' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='__next' tag='SPAN' type='' class='sc-eb51e184-1 ljxVSS' /&gt;" Guid="e3e4a57f-eea5-41a9-913c-2c02f85a4301" InformativeScreenshot="933905d85c6df212e50ea6d0211204fd.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Raayan (2024) - IMDb' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
               </uix:NGetText.Target>
             </uix:NGetText>
-            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="353.6,110.4" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Movie : &quot;+movie+Environment.NewLine+&#xD;&#xA;&quot;Year : &quot;+year+Environment.NewLine+&#xD;&#xA;&quot;Duration : &quot;+duration+Environment.NewLine+&#xD;&#xA;&quot;Rating : &quot;+rating+Environment.NewLine]" />
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="353.6,110.4" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Movie : &quot;+movie+Environment.NewLine+&#xA;&quot;Year : &quot;+year+Environment.NewLine+&#xA;&quot;Duration : &quot;+duration+Environment.NewLine+&#xA;&quot;Rating : &quot;+rating+Environment.NewLine]" />
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
@@ -213,5 +213,6 @@
         <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAdVJREFUWEftlDssQ1EYx69q7+2tPt2iJjERLJV4LMSgBq9OWBjaREKICBI0MZSQVEMIDQORWiRKjBUbJWHvZMUuwfy53znpfbSJ3EgwOMMv53/O7fm+X865vdzHnQ/+EibABJgAE2ACBQLHyy4ItPAwGLDCzYFEMhLqF+HlslyZI9mUVzfvauUhErbDW6YCJodsZC0+7dDVz6dAIDpmB47jwCeZ4DzuIRkRBQ5uDyVljtwn1bnHUaTkkzU3NDdYSA7L4vk9tBgWQGJTDt1cK5De8YC5mOatWacigCeXirkJ77cVul6IIQHeQgvjkeJJYEa0AleJUrBZ6SloBQRe/f3KuF3XCzEkUFNVTEarXKyu2qwU/EqgqZ4KDHeLEOwQSO5rF3S9EEMC/lozVHpNJPe00WKIkRMIB0UC5l55b34/QwKNskCbnycZ324ckXyB3PX8iAC+TJg3Z9QXUSuwNEr3Idtz6hWMyFcw0Gkl+dtXgAKrE7TxxQZdQ7QCOUwmDu6OJOUELGb12WKoRNcLKRB4OJZgL+KEZNQFjxdlJKfW3ZA99ZL8lC4nI/Kcps9z7MvgfqxzFneTtYz8MUssOGF33gmv1wb+hr8NE2ACTIAJ/HcBH3wCnyEaX70T9tEAAAAASUVORK5CYII=" InformativeScreenshot="db45fcec5f89624fb7ccb6ed911b1c84.jpg" Selector="&lt;html app='chrome.exe' title='IMDb: Ratings, Reviews, and Where to Watch the Best Movies &amp;amp; TV Shows' /&gt;" Title="IMDb: Ratings, Reviews, and Where to Watch the Best Movies &amp; TV Shows" Url="https://www.imdb.com/" />
       </uix:NApplicationCard.TargetApp>
     </uix:NApplicationCard>
+    <ui:Comment sap:VirtualizedContainerService.HintSize="451.2,98.4" sap2010:WorkflowViewState.IdRef="Comment_1" Text="Name:Bhuvaanesh R&#xD;&#xA;Reg No:220701045&#xD;&#xA;Dept &amp; Sec:CSE-A" />
   </Sequence>
 </Activity>
